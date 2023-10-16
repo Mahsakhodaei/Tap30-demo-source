@@ -1,7 +1,21 @@
-/* reset css */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/* Reset css */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Root variable */
+:root {
+  --color-primary: #ff5722;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-headings:#000;
+  --color-body:#333333;
+  --color-white:#fff;
 }
