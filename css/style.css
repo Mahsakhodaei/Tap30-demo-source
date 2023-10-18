@@ -15,7 +15,96 @@
   --color-secondary-light: #fff6f2;
   --color-secondary-dark: #ffa589;
   --color-navbar: #f8f8f8;
-  --color-headings:#000;
-  --color-body:#333333;
-  --color-white:#fff;
+  --color-headings: #000;
+  --color-body: #333333;
+  --color-white: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2,
+h3 {
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2,
+  h3 {
+    font-size: 3.5rem;
+  }
+}
+/* button */
+.btn {
+  outline: none;
+  border: 0ch;
+  cursor: pointer;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.btn--secondary {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-secondary-light);
+}
+
+.btn--block {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn--block {
+    font-size: 2rem;
+  }
+}
+
+/* badge */
+.badge {
+  border: 2px solid var(--color-primary);
+  border-radius: 32px;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.3rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: var(--color-secondary-light);
+}
+
+.badge--primary {
+  color: var(--color-secondary-light);
+  background-color: var(--color-primary);
+}
+@media screen and (min-width: 1024px){
+  .badge{
+    font-size: 1.4rem;
+  }
 }
