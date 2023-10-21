@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 /* Root variable */
@@ -103,8 +102,26 @@ h3 {
   color: var(--color-secondary-light);
   background-color: var(--color-primary);
 }
-@media screen and (min-width: 1024px){
-  .badge{
+@media screen and (min-width: 1024px) {
+  .badge {
     font-size: 1.4rem;
   }
+}
+
+/* list */
+
+.list {
+  list-style: none;
+  font-size: 1.6rem;
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.list--tick .list__item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../assets/images/Tick-Square.svg) no-repeat;
+  padding-right: 3rem;
 }
