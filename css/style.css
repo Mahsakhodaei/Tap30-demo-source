@@ -11,6 +11,7 @@
 /* Root variable */
 :root {
   --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
   --color-secondary-light: #fff6f2;
   --color-secondary-dark: #ffa589;
   --color-navbar: #f8f8f8;
@@ -118,10 +119,96 @@ h3 {
   display: inline-block;
   margin-left: 2rem;
 }
-.list--tick .list__item::before {
+/* .list--tick .list__item::before {
   content: "";
   width: 20px;
   height: 20px;
   background: url(../assets/images/Tick-Square.svg) no-repeat;
   padding-right: 3rem;
+} */
+.list--tick .list__item {
+  background: url(../assets/images/Tick-Square.svg) no-repeat right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .list {
+    font-size: 1.8rem;
+  }
+  .list--tick .list__item {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Plan */
+.block-plan {
+  display: grid;
+  gap: 8rem 6rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  margin-top: 4rem;
+}
+.plan {
+  font-size: 1.8rem;
+  transition: all 0.5s ease-in-out;
+}
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px #efefef;
+}
+.card--primary .card__header {
+  background: var(--color-primary-light);
+}
+.card--secondary .card__header {
+  background: var(--color-secondary-dark);
+}
+.card__header,
+.card__body {
+  padding: 3rem 2.5rem;
+}
+.card__header {
+  background: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+.card__body {
+  background: var(--color-secondary-light);
+}
+.paln__introduction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.plan__price {
+  font-size: 3rem;
+}
+.plan__billing-cycle {
+  font-size: 1.4rem;
+}
+.plan__discription {
+  display: block;
+  margin-top: 1.5rem;
+}
+.plan .btn--block {
+  font-size: 1.6rem;
+  margin-top: 10rem;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 1024px) {
+  .plan .btn--block {
+    font-size: 1.8rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+}
+/* container */
+.container {
+  /* max-width: 1140px; */
+  margin: 0 auto;
 }
