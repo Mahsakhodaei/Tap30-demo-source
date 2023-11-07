@@ -410,7 +410,6 @@ textarea {
 }
 .footer__item {
   margin-bottom: 2.5rem;
-  max-width: 200px;
 }
 .footer__item a {
   text-decoration: none;
@@ -428,7 +427,11 @@ textarea {
 .footer__item h3 {
   font-size: 1.4rem;
   color: var(--color-white);
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.footer__item p {
+ color: #ccc;
+ font-size: 1.4rem;
 }
 .footer__item.enemad {
   display: flex;
@@ -440,7 +443,6 @@ textarea {
   border-radius: 10px;
   padding: 1rem 0.5rem;
   max-width: 86px;
-  /* max-height: 110px; */
   margin-left: 1.5rem;
 }
 .footer__enemad img {
@@ -455,5 +457,11 @@ textarea {
   .footer__item {
     margin-bottom: 0;
     margin-left: 2rem;
+  }
+  .footer__enemad {
+    max-height: 80px;
+  }
+  .footer__item {
+    max-width: 200px;
   }
 }
