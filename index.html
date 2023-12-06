@@ -9,70 +9,45 @@
     <title>Tapsi Demo</title>
   </head>
   <body>
-    <section class="hero-section">
-      <picture>
-        <!-- <source
-          srcset="https://tapsi.ir/images/home/banner.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        /> -->
-        <source
-          srcset="./assets/images/home/banner.jpg"
-          type="image/jpg"
-          media="(min-width: 768px)"
-        />
-        <!-- <source
-          srcset="https://tapsi.ir/images/home/banner-mobile.webp"
-          type="image/webp"
-          media="(max-width: 768px)"
-        /> -->
-        <source
-          srcset="./assets/images/banner-mobile.jpg"
-          type="image/jpg"
-          media="(max-width: 768px)"
-        />
-        <img alt="banner" src="./assets/images/banner.jpg" class="banner-img" />
-      </picture>
-      <!-- <picture>
-        <source
-          srcset="https://tapsi.ir/images/home/banner.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="https://tapsi.ir/images/home/banner.jpg"
-          type="image/jpg"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="https://tapsi.ir/images/home/banner-mobile.webp"
-          type="image/webp"
-          media="(max-width: 768px)"
-        />
-        <source
-          srcset="https://tapsi.ir/images/home/banner-mobile.jpg"
-          type="image/jpg"
-          media="(max-width: 768px)"
-        />
-        <img
-          alt="banner"
-          src="https://tapsi.ir/images/home/banner.jpg"
-          class="banner-img"
-        />
-      </picture> -->
+    <section class="services container">
+      <div class="services__tabs">
+        <a class="tab" id="nav-classic-tab">
+          <!-- <img id="bg-cc_classic" src="./assets/images/css_sprites.png"> -->
+          <span class="bg-cc_classic"></span>
+          <p>تپسی کلاسیک</p>
+        </a>
 
-      <div class="hero-wrapper">
-        <div class="intro-btn">
-          <h1>تپسی</h1>
-          <h2>اپلیکیشن درخواست خودرو و پیک</h2>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-        </div>
+        <a class="tab" id="nav-tel-tab">
+          <span class="bg-cc_tel"></span>
+          <p>تپسی تلفنی</p>
+        </a>
+
+        <a class="tab" id="nav-line-tab">
+          <span class="bg-cc_line"></span>
+          <p>تپسی لاین</p>
+        </a>
+
+        <a class="tab active" id="nav-motopeyk-tab">
+          <span class="bg-cc_motopeyk"></span>
+          <p>موتوپیک</p>
+        </a>
+
+        <a class="tab" id="nav-autopeyk-tab">
+          <span class="bg-cc_autopeyk"></span>
+          <p>اتوپیک</p>
+        </a>
+
+        <a class="tab" id="nav-plus-tab">
+          <span class="bg-cc_plus"></span>
+          <p>تپسی پلاس</p>
+        </a>
+
+        <a class="tab" id="nav-hamyar-tab">
+          <span class="bg-cc_hamyar"></span>
+          <p>همیار</p>
+        </a>
       </div>
     </section>
-
-    <!-- <script src="./js/main.js"></script> -->
   </body>
+  <script src="./js/main.js"></script>
 </html>

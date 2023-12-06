@@ -561,7 +561,7 @@ textarea {
   transform: rotate(45deg) translate(-8px, -8px);
   margin: 8px 0;
 }
-/* Hero nsection */
+/* Hero section */
 .hero-section {
   width: 100%;
   height: 478px;
@@ -575,7 +575,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  height:478px;
+  height: 478px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,4 +606,80 @@ textarea {
   border-radius: 12px;
   margin-bottom: 2rem;
   padding: 12px;
+}
+
+/* SERVICES TAB */
+.bg-cc_hamyar {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -10px -10px;
+}
+.bg-cc_plus {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -402px -10px;
+}
+.bg-cc_autopeyk {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -10px -219px;
+}
+.bg-cc_motopeyk {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -402px -219px;
+}
+.bg-cc_line {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -10px -428px;
+}
+.bg-cc_tel {
+  width: 218px;
+  height: 110px;
+  background: url("./assets/images/css_sprites.png") -10px -637px;
+}
+.bg-cc_classic {
+  width: 372px;
+  height: 189px;
+  background: url("./assets/images/css_sprites.png") -402px -428px;
+}
+
+.services__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+}
+.services__tabs .tab {
+  display: block;
+  text-decoration: none;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.services__tabs .tab:hover {
+  opacity: 1;
+}
+.services__tabs .tab > p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.services__tabs span {
+  max-width: 85px;
+  max-height: 85px;
+}
+@media screen and (min-width: 1024px) {
+  .services__tabs .tab > p {
+    font-size: 1.4rem;
+  }
+  .services__tabs span {
+    width: 100%;
+  }
 }
