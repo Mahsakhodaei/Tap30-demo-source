@@ -612,37 +612,37 @@ textarea {
 .bg-cc_hamyar {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -10px -10px;
+  background: url(../assets/images/css_sprites.png) -10px -10px;
 }
 .bg-cc_plus {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -402px -10px;
+  background: url(../assets/images/css_sprites.png) -402px -10px;
 }
 .bg-cc_autopeyk {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -10px -219px;
+  background: url(../assets/images/css_sprites.png) -10px -219px;
 }
 .bg-cc_motopeyk {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -402px -219px;
+  background: url(../assets/images/css_sprites.png) -402px -219px;
 }
 .bg-cc_line {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -10px -428px;
+  background: url(../assets/images/css_sprites.png) -10px -428px;
 }
 .bg-cc_tel {
   width: 218px;
   height: 110px;
-  background: url("./assets/images/css_sprites.png") -10px -637px;
+  background: url(../assets/images/css_sprites.png) -10px -637px;
 }
 .bg-cc_classic {
   width: 372px;
   height: 189px;
-  background: url("./assets/images/css_sprites.png") -402px -428px;
+  background: url(../assets/images/css_sprites.png) -402px -428px;
 }
 
 .services__tabs {
@@ -650,6 +650,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   overflow: auto;
+  padding: 5px 0 20px;
 }
 .services__tabs .tab {
   display: block;
@@ -675,11 +676,54 @@ textarea {
   max-width: 85px;
   max-height: 85px;
 }
+.services__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.services .feature__title {
+  margin: 2rem 0 2rem;
+}
+.services .feature__image {
+  display: none;
+}
+/* .tab-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.feature__detail {
+  width: 100%;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab.active {
+  opacity: 1;
+}
 @media screen and (min-width: 1024px) {
   .services__tabs .tab > p {
     font-size: 1.4rem;
   }
   .services__tabs span {
     width: 100%;
+  }
+  .services__title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .services .feature__title {
+    font-size: 2.8rem;
+  }
+  .services .feature__image {
+    display: block;
+  }
+  .feature__detail {
+    width: 80%;
   }
 }
