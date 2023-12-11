@@ -1,8 +1,8 @@
-// const toggler = document.querySelector(".nav__toggler");
-// const navbar = document.querySelector(".nav");
-// toggler.addEventListener("click", (e) => {
-//   navbar.classList.toggle("nav__expanded");
-// });
+const toggler = document.querySelector(".nav__toggler");
+const navbar = document.querySelector(".nav");
+toggler.addEventListener("click", (e) => {
+  navbar.classList.toggle("nav__expanded");
+});
 
 const tabs = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
@@ -20,11 +20,11 @@ tabs.forEach((tab) => {
   });
 });
 
-// const accordionHeaders = document.querySelectorAll(".accordion__header");
-// const accordion = document.querySelector(".accordion");
-// accordionHeaders.forEach((item) => {
-//   item.addEventListener("click", (e) => {
-//     console.log(e.target.parentElement);
-//     e.target.parentElement.classList.toggle("accordion__expanded");
-//   });
-// });
+const accordionHeaders = document.querySelectorAll(".accordion__header");
+const accordion = document.querySelector(".accordion");
+accordionHeaders.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    console.log(e.target.parentElement);
+    e.target.parentElement.classList.toggle("accordion__expanded");
+  });
+});

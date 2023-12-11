@@ -219,9 +219,13 @@ h3 {
 /* Feature */
 .feature {
   display: grid;
+  justify-content: center;
+  padding: 2rem;
+  gap: 0rem 10rem;
 }
 .feature .feature__text {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .feature__image > img {
   width: 100%;
@@ -236,6 +240,10 @@ h3 {
 @media screen and (min-width: 1024px) {
   .feature {
     grid-template-columns: repeat(2, 1fr);
+    gap: 6rem 10rem;
+  }
+  .charge .feature__image {
+    order: 1;
   }
   .feature__image {
     order: 2;
@@ -566,10 +574,14 @@ textarea {
   width: 100%;
   height: 478px;
 }
-.hero-section img {
+.hero-section .banner-img {
   width: 100%;
   height: auto;
 }
+/* .hero-section img {
+  width: 100%;
+  height: auto;
+} */
 .hero-wrapper {
   position: absolute;
   top: 0;
@@ -606,6 +618,49 @@ textarea {
   border-radius: 12px;
   margin-bottom: 2rem;
   padding: 12px;
+}
+.banner-phone {
+  display: none;
+  position: absolute;
+  left: 10%;
+  bottom: -50%;
+  height: auto;
+  width: 420px;
+}
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    justify-content: flex-start;
+    right: 0;
+  }
+  .intro-btn {
+    width: 500px;
+    max-width: 500px;
+    padding: 0 25px;
+  }
+  .intro-btn h1 {
+    font-size: 5rem;
+  }
+  .intro-btn h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .intro-btn__passenger p {
+    font-size: 1.5rem;
+  }
+  .banner-phone {
+    display: block;
+  }
+  .intro-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /* SERVICES TAB */
@@ -681,6 +736,7 @@ textarea {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .services .feature__title {
   margin: 2rem 0 2rem;
 }
@@ -726,4 +782,15 @@ textarea {
   .feature__detail {
     width: 80%;
   }
+}
+.block {
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 6rem 2rem;
+  }
+}
+.block-heading {
+  margin-top: 6rem;
 }
