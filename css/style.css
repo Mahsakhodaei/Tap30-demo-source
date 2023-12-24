@@ -834,9 +834,9 @@ textarea {
   background-color: #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   border-radius: 32px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   transform: translateY(-60px);
-  width: 80%;
+  width: 85%;
 }
 .slide__header {
   display: flex;
@@ -855,4 +855,56 @@ textarea {
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 1rem;
+}
+.slide__detail .slide__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #ccc;
+}
+/* ACCORDION SECTION */
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 2rem 2rem;
+  border-bottom: 2px solid #ececec;
+}
+.accordion__heading {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #3a3a3a;
+}
+.accordion__content {
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+.accordion__content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.accordion__expanded .accordion__content {
+  max-height: 100vh;
+  opacity: 1;
+  padding: 1rem 4rem;
+}
+
+.accordion__header i {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  transform: rotate();
+  transition: all 0.3s ease-in-out;
+}
+.accordion__expanded .accordion__header i {
+  transform: rotate(-90deg);
+}
+.accordion-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #ececec;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.06);
 }
