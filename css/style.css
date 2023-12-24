@@ -242,12 +242,12 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem 10rem;
   }
-  .charge.feature__image {
+  .charge .feature__image {
     order: 1;
   }
   .feature__image {
     width: 100%;
-    order: 2;
+    /* order: 1; */
     margin-bottom: 0;
   }
   .feature__details {
@@ -260,6 +260,8 @@ h3 {
 /* contactUs */
 .contact-us {
   display: grid;
+  justify-content: center;
+  gap: 3rem 4rem;
 }
 .contact-us__map {
   display: none;
@@ -360,7 +362,7 @@ h3 {
   height: 100%;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 5.2rem;
+  padding: 2rem;
   box-shadow: 0 19px 20px rgba(0, 0, 0, 0.06);
 }
 .form-wrapper h3 {
@@ -421,7 +423,7 @@ textarea {
   flex-direction: column;
 }
 .footer__item {
-  margin-bottom: 2.5rem;
+  margin: 2rem 1rem;
 }
 .footer__item a {
   text-decoration: none;
@@ -467,8 +469,7 @@ textarea {
     flex-wrap: wrap;
   }
   .footer__item {
-    margin-bottom: 0;
-    margin-left: 2rem;
+    margin: 2rem 1rem;
   }
   .footer__enemad {
     max-height: 80px;
@@ -576,7 +577,7 @@ textarea {
 /* Hero section */
 .hero-section {
   width: 100%;
-  height: 478px;
+  /* height: 478px; */
 }
 .hero-section .banner-img {
   width: 100%;
@@ -588,7 +589,7 @@ textarea {
 } */
 .hero-wrapper {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
   width: 100%;
   height: 478px;
@@ -798,4 +799,53 @@ textarea {
 }
 .block-heading {
   margin-top: 6rem;
+}
+/* TRAVELL SECTION */
+.travell__slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.travell__slide {
+  flex: 0 0 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.travell__slide:not(:last-child) {
+  margin-left: 2rem;
+}
+.travell__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px;
+}
+.slide__detail {
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 32px;
+  padding: 1rem 1.5rem;
+  transform: translateY(-60px);
+  width: 80%;
+}
+.slide__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.slide__header p {
+  font-size: 1.2rem;
+}
+.slide__header .badge {
+  font-size: 1.2rem;
+  padding: 0.1rem 1.5rem;
+}
+.slide__detail .slide__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }

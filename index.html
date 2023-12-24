@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Tapsi Demo</title>
   </head>
   <body>
@@ -85,7 +86,12 @@
       </div>
     </section>
     <!-- services -->
-    <section class="services container block">
+    <section
+      class="services container block"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 class="services__title block-heading">سرویس‌های تپسی</h2>
 
       <div class="services__tabs">
@@ -125,7 +131,7 @@
         </a>
       </div>
       <div class="container">
-        <div class="tab-content active" id="nav-classic-tab">
+        <div class="tab-content active charge" id="nav-classic-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-classic.webp" alt="" />
           </div>
@@ -139,7 +145,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-motopeyk-tab">
+        <div class="tab-content charge" id="nav-motopeyk-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-motopeyk.webp" alt="" />
           </div>
@@ -153,7 +159,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-autopeyk-tab">
+        <div class="tab-content charge" id="nav-autopeyk-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-autopeyk.webp" alt="" />
           </div>
@@ -168,7 +174,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-plus-tab">
+        <div class="tab-content charge" id="nav-plus-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-plus.webp" alt="" />
           </div>
@@ -183,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-tel-tab">
+        <div class="tab-content charge" id="nav-tel-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-tel.webp" alt="" />
           </div>
@@ -198,7 +204,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-hamyar-tab">
+        <div class="tab-content charge" id="nav-hamyar-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-hamyar.webp" alt="" />
           </div>
@@ -212,7 +218,7 @@
             </p>
           </div>
         </div>
-        <div class="tab-content" id="nav-line-tab">
+        <div class="tab-content charge" id="nav-line-tab">
           <div class="feature__image">
             <img src="./assets/images/illus-line.webp" alt="" />
           </div>
@@ -230,7 +236,7 @@
       </div>
     </section>
     <!-- feature -->
-    <section class="feature container block">
+    <section class="feature container block charge">
       <div class="feature__image">
         <img src="/assets/images/i-mac-1.png" alt="" />
       </div>
@@ -245,7 +251,7 @@
         <button class="btn btn--primary">ورود و ثبت نام سازمانی</button>
       </div>
     </section>
-    <section class="feature container block charge">
+    <section class="feature container block">
       <div class="feature__image">
         <img src="/assets/images/i-mac-1.png" alt="" />
       </div>
@@ -338,78 +344,198 @@
       </div>
     </section>
     <!-- contact us -->
-    <section class="contact-us container block">
-      <div class="contact-us__social">
-        <span class="icon-container">
-          <svg class="icon">
-            <use xlink:href="/assets/images/svg-sprite.svg#linkedin"></use>
-          </svg>
-        </span>
-        <span class="icon-container">
-          <svg class="icon">
-            <use xlink:href="/assets/images/svg-sprite.svg#telegram"></use>
-          </svg>
-        </span>
-        <span class="icon-container">
-          <svg class="icon">
-            <use xlink:href="/assets/images/svg-sprite.svg#twitter"></use>
-          </svg>
-        </span>
-      </div>
-
-      <div class="contact-us__icons">
-        <div class="icon-holder">
-          <span class="icon-holder__label">mahsakhodaei811@gmail.com</span>
+    <section class="container block">
+      <h2 class="block-heading">تماس با ما</h2>
+      <div class="contact-us">
+        <div class="contact-us__social">
           <span class="icon-container">
             <svg class="icon">
-              <use xlink:href="/assets/images/svg-sprite.svg#mail"></use>
+              <use xlink:href="/assets/images/svg-sprite.svg#linkedin"></use>
+            </svg>
+          </span>
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#telegram"></use>
+            </svg>
+          </span>
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#twitter"></use>
             </svg>
           </span>
         </div>
-        <div class="icon-holder">
-          <span class="icon-holder__label">(854) 555-6587</span>
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="/assets/images/svg-sprite.svg#smartphone"></use>
-            </svg>
-          </span>
-        </div>
-        <div class="icon-holder">
-          <span class="icon-holder__label"
-            >ایران - اصفهان - خیابان شاهد - کوچه شکیب - پلاک 21</span
-          >
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="/assets/images/svg-sprite.svg#location"></use>
-            </svg>
-          </span>
-        </div>
-      </div>
 
-      <div class="contact-us__map">
-        <img src="./assets/images/map.png" alt="location us" />
-      </div>
+        <div class="contact-us__icons">
+          <div class="icon-holder">
+            <span class="icon-holder__label">mahsakhodaei811@gmail.com</span>
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="/assets/images/svg-sprite.svg#mail"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="icon-holder">
+            <span class="icon-holder__label">(854) 555-6587</span>
+            <span class="icon-container">
+              <svg class="icon">
+                <use
+                  xlink:href="/assets/images/svg-sprite.svg#smartphone"
+                ></use>
+              </svg>
+            </span>
+          </div>
+          <div class="icon-holder">
+            <span class="icon-holder__label"
+              >ایران - اصفهان - خیابان شاهد - کوچه شکیب - پلاک 21</span
+            >
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="/assets/images/svg-sprite.svg#location"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
 
-      <div class="contact-us__form">
-        <div class="form-wrapper">
-          <h3>نظرات شما</h3>
-          <form>
-            <input type="text" placeholder="نام و نام خانوادگی" />
-            <input
-              type="email"
-              placeholder="ایمیل خود را وارد کنید"
-              dir="ltr"
-            />
-            <textarea
-              rows="10"
-              placeholder="نظر خود را در این قسمت تایپ کنید"
-            ></textarea>
-            <button class="btn btn--primary" type="submit">ثبت نظر</button>
-          </form>
+        <div class="contact-us__map">
+          <img src="./assets/images/map.png" alt="location us" />
+        </div>
+
+        <div class="contact-us__form">
+          <div class="form-wrapper">
+            <h3>نظرات شما</h3>
+            <form>
+              <input type="text" placeholder="نام و نام خانوادگی" />
+              <input
+                type="email"
+                placeholder="ایمیل خود را وارد کنید"
+                dir="ltr"
+              />
+              <textarea
+                rows="10"
+                placeholder="نظر خود را در این قسمت تایپ کنید"
+              ></textarea>
+              <button class="btn btn--primary" type="submit">ثبت نظر</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+    <!-- travell -->
+    <section class="container block">
+      <h2 class="block-heading">جوایز ویژه</h2>
+      <div class="travell">
+        <div class="travell__slides">
+          <div class="travell__slide">
+            <div class="slide__img">
+              <img src="./assets/images/travell.png" alt="travell image" />
+            </div>
+            <div class="slide__detail">
+              <div class="slide__header">
+                <span class="badge badge--primary">ویژه</span>
+                <p>اقامت رایگان &bull; سفر سه روزه</p>
+              </div>
+              <p class="slide__title">سفر به قلب کویر</p>
+              <div class="slide__icons">
+                <div>
+                  <i></i>
+                  <i></i>
+                </div>
+                <div>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="travell__slide">
+            <div class="slide__img">
+              <img src="./assets/images/travell.png" alt="travell image" />
+            </div>
+            <div class="slide__detail">
+              <div class="slide__header">
+                <span class="badge badge--primary">ویژه</span>
+                <p>اقامت رایگان &bull; سفر سه روزه</p>
+              </div>
+              <p class="slide__title">سفر به قلب کویر</p>
+            </div>
+          </div>
+
+          <div class="travell__slide">
+            <div class="slide__img">
+              <img src="./assets/images/travell.png" alt="travell image" />
+            </div>
+            <div class="slide__detail">
+              <div class="slide__header">
+                <span class="badge badge--primary">ویژه</span>
+                <p>اقامت رایگان &bull; سفر سه روزه</p>
+              </div>
+              <p class="slide__title">سفر به قلب کویر</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="container footer">
+        <div class="footer__item">
+          <a href=""
+            ><img
+              src="./assets/images/tapsi-logo-white.svg"
+              alt="logo footer"
+            />
+          </a>
+          <h3>اپلیکیشن درخواست خودرو و پیک</h3>
+          <p class="copy-right">
+            تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.
+          </p>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">فرصت شغلی</a>
+          <a href="">تماس با ما</a>
+          <a href="">لوگو و هویت سازمانی</a>
+        </div>
+        <div class="footer__item">
+          <h6>مسافران</h6>
+          <a href="">دانلود اپ مسافر</a>
+          <a href="">نسخه وب تپسی</a>
+          <a href="">پرسش‌های متداول مسافران</a>
+          <a href="">شرایط و قوانین مسافران</a>
+        </div>
+        <div class="footer__item">
+          <h6>رانندگان</h6>
+          <a href="">دانلود اپ سفیر</a>
+          <a href="">ثبت نام راننده تاکسی اینترنتی</a>
+          <a href="">پرسش‌های متداول سفیران</a>
+          <a href="">باشگاه سفیران</a>
+        </div>
+        <div class="footer__item">
+          <h6>کسب و کارها</h6>
+          <a href="">پنل سازمانی تپسی</a>
+          <a href="">خرید کد اعتبار و تخفیف</a>
+          <a href="">دریافت API</a>
+        </div>
+        <div class="footer__item enemad">
+          <div class="footer__enemad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enemad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enemad">
+            <img src="./assets/images/enemad.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
