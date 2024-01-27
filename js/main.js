@@ -1,7 +1,9 @@
 const toggler = document.querySelector(".nav__toggler");
 const navbar = document.querySelector(".nav");
+const hero = document.querySelector(".hero-section");
 toggler.addEventListener("click", (e) => {
   navbar.classList.toggle("nav__expanded");
+  hero.classList.toggle("nav__expanded");
 });
 
 const tabs = document.querySelectorAll(".tab");

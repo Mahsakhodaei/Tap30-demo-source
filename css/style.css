@@ -575,6 +575,9 @@ textarea {
   transform: rotate(45deg) translate(-8px, -8px);
   margin: 8px 0;
 }
+.hero-section.nav__expanded .hero-wrapper {
+  top: 290px;
+}
 /* Hero section */
 .hero-section {
   width: 100%;
@@ -673,12 +676,25 @@ textarea {
     color: #fff;
   }
   .banner-phone {
-    display: block;
+    display: none;
   }
   .intro-wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner-phone {
+    display: block;
+    bottom: -1%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .banner-phone {
+    display: block;
+    left: 10%;
+    bottom: -10%;
   }
 }
 
