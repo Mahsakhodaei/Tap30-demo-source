@@ -687,7 +687,7 @@ textarea {
 @media screen and (min-width: 1024px) {
   .banner-phone {
     display: block;
-    bottom: -1%;
+    bottom: -30%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -699,42 +699,9 @@ textarea {
 }
 
 /* SERVICES TAB */
-.bg-cc_hamyar {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -10px -10px;
+.tab img {
+  max-width: 85px;
 }
-.bg-cc_plus {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -402px -10px;
-}
-.bg-cc_autopeyk {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -10px -219px;
-}
-.bg-cc_motopeyk {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -402px -219px;
-}
-.bg-cc_line {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -10px -428px;
-}
-.bg-cc_tel {
-  width: 218px;
-  height: 110px;
-  background: url(../assets/images/css_sprites.png) -10px -637px;
-}
-.bg-cc_classic {
-  width: 372px;
-  height: 189px;
-  background: url(../assets/images/css_sprites.png) -402px -428px;
-}
-
 .services__tabs {
   display: flex;
   flex-direction: row;
