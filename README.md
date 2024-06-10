@@ -2,7 +2,8 @@
 This project implemented with HTML, CSS and JavaScript. This project has been implemented in a responsive design.
 
 # Screen shots :
-![Screenshot (22)](https://github.com/Mahsakhodaei/Tap30-demo-source/assets/47160014/c67ae128-41d1-4fc5-b09d-60a219d412e3)
+![demo-tap30](https://github.com/Mahsakhodaei/Tap30-demo-source/assets/47160014/2554db05-3c06-4fcb-8817-212e0d2d9847)
+
 
 
 # links :
